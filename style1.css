@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.parent-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+   /* background-color: rgb(207, 203, 203);
+    min-height: 100vh; */
+    align-items: center;
+    text-align: center;
+
+}
+
+.image-of-food{
+    height: 400px;
+    width: 400px;
+    border-radius: 70%;
+    animation: rotateCircle 10s linear infinite;
+  }
+
+  @keyframes rotateCircle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+  .main-box{
+    padding:210px ;
+
+  }
+
+  .sub-box{
+   padding: 120px;
+  }
+
+  #h1{
+      font-family: 'Dancing Script', cursive;
+    /* font-size: 40px; */
+   
+}
+
+.button{
+    height: 40px;
+    width: 150px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .parent-box{
+     padding-top: 130px;
+    }
+    .main-box, .sub-box {
+        padding: 20px;
+    }
+
+    .image-of-food {
+        height: 250px;
+        width: 250px;
+    }
+
+    #h1 {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        width: 120px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .parent-box {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .main-box, .sub-box {
+        padding: 30px;
+    }
+
+    .image-of-food {
+        height: 300px;
+        width: 300px;
+    }
+
+    #h1 {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .parent-box{
+        padding-top: 160px;
+    }
+    .main-box, .sub-box {
+        padding: 60px;
+    }
+
+    #h1 {
+        font-size: 2rem;
+    }
+}
+
